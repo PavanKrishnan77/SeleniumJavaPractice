@@ -1,0 +1,60 @@
+package Selenium;
+
+import java.awt.AWTException;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+public class DropdownAscendingOrder_Yes 
+{
+	@Test
+	public void DropdownAscending() throws AWTException, InterruptedException
+	{
+		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://seleniumpractise.blogspot.com/2019/01/dropdown-demo-for-selenium.html");
+		
+		//To Verify whether Dropdown values are in Ascending Order or No
+		//Result : If all Dropdown values are in Ascending Order <> Result <<Pass>> else <<Fail>>
+		//Result <<Pass>>
+		WebElement ascend = driver.findElement(By.id("tools"));
+		Select tools = new Select(ascend);
+		
+		//Actual List
+		List actualList = new ArrayList();
+		
+		List<WebElement> myTools = tools.getOptions();
+		
+		for(WebElement elements : myTools)
+		{
+			String data = elements.getText();
+			actualList.add(data); //Here we are adding all dropdown options into actualList
+			System.out.println(data);
+		}
+		System.out.println("*************************************");
+		
+		//Temporary List and Added all the Data into tempList
+		List tempList = new ArrayList();
+		tempList.addAll(actualList);
+		System.out.println(tempList);
+		
+		//It will sort in Ascending Order
+		Collections.sort(tempList);
+		
+		//To Check in Descending Order
+		//Collections.sort(tempList,Collections.reverseOrder());
+		
+		Assert.assertTrue(actualList.equals(tempList));
+		
+		driver.close();
+	}
+}
