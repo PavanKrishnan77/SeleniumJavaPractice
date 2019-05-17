@@ -4,6 +4,7 @@ import java.awt.AWTException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -21,6 +22,11 @@ public class DropdownAscescendingOrder_No
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().deleteAllCookies();
+		
+		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
 		driver.get("https://seleniumpractise.blogspot.com/2019/01/dropdown-demo-for-selenium.html");
 		
 		//To Verify whether Dropdown values are in Ascescending Order or Not

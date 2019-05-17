@@ -38,7 +38,7 @@ public class DownloadFileConcept
 		//driver = new FirefoxDriver(profile);
 
 		//Chrome:
-		System.setProperty("webdriver.chrome.driver", "/Users/naveenkhunteta/Downloads/chromedriver");
+		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		ChromeOptions options = new ChromeOptions();
 
 		Map<String, Object> prefs = new HashMap<String, Object>();
