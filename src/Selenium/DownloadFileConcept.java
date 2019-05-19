@@ -21,7 +21,7 @@ public class DownloadFileConcept
 	File folder;
 
 	@BeforeMethod
-	public void setUp()
+	public void fileDownload()
 	{
 		//88889-99898-909090-98988-09909
 		folder = new File(UUID.randomUUID().toString());

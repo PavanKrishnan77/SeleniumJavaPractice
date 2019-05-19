@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 public class DropdownAscescendingOrder_No 
 {
 	@Test
-	public void DropdownAscending() throws AWTException, InterruptedException
+	public void dropdownAscending() throws AWTException, InterruptedException
 	{
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();

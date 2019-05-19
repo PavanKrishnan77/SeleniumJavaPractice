@@ -8,10 +8,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class WindowHandles 
+public class BrowserWindowPopup_1 
 {
 	@Test
-	public void PopupVerify() throws AWTException, InterruptedException
+	public void browserPopup() throws AWTException, InterruptedException
 	{
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -35,9 +35,10 @@ public class WindowHandles
 			if(!parentWindow1.equalsIgnoreCase(child))
 			{
 				driver.switchTo().window(child);
-				System.out.println("The Child Window Name is : " +driver.getTitle());
+				System.out.println("The Child Window Name is :: " +driver.getTitle());
 				driver.close();
 			}
 		}
+		driver.quit();
 	}
 }

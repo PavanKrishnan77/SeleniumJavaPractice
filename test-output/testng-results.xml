@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11489" started-at="2019-05-17T17:44:43Z" finished-at="2019-05-17T17:44:54Z">
+  <suite name="Default suite" duration-ms="23534" started-at="2019-05-19T14:53:59Z" finished-at="2019-05-19T14:54:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11489" started-at="2019-05-17T17:44:43Z" finished-at="2019-05-17T17:44:54Z">
-      <class name="Selenium.BootStrapDropDown_1">
-        <test-method status="PASS" signature="bootStrap()[pri:0, instance:Selenium.BootStrapDropDown_1@d41cee]" name="bootStrap" duration-ms="11385" started-at="2019-05-17T23:14:43Z" finished-at="2019-05-17T23:14:54Z">
+    <test name="Default test" duration-ms="23534" started-at="2019-05-19T14:53:59Z" finished-at="2019-05-19T14:54:22Z">
+      <class name="Selenium.DragandDrop_2">
+        <test-method status="PASS" signature="dragandDrop()[pri:0, instance:Selenium.DragandDrop_2@d41cee]" name="dragandDrop" duration-ms="23450" started-at="2019-05-19T20:23:59Z" finished-at="2019-05-19T20:24:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bootStrap -->
-      </class> <!-- Selenium.BootStrapDropDown_1 -->
+        </test-method> <!-- dragandDrop -->
+      </class> <!-- Selenium.DragandDrop_2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

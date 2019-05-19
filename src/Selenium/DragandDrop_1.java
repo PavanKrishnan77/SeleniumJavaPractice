@@ -2,16 +2,17 @@ package Selenium;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
-public class AlertPopup
+public class DragandDrop_1 
 {
 	@Test
-	public void alertWindowPopup() throws InterruptedException
+	public void dragandDrop()
 	{
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -21,16 +22,15 @@ public class AlertPopup
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
-		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
+		driver.get("https://jqueryui.com/droppable/");
 		
-		driver.findElement(By.name("proceed")).click();
+		driver.switchTo().frame(0);
 		
-		Alert alert = driver.switchTo().alert();
-		System.out.println(alert.getText());
-		Thread.sleep(2000);
+		WebElement dragElement = driver.findElement(By.id("draggable"));
+		WebElement dropElement = driver.findElement(By.id("droppable"));
 		
-		//alert.accept(); //To Click on OK button of Alert Popup
+		Actions actions = new Actions(driver);
+		actions.dragAndDrop(dragElement, dropElement).release().build().perform();
 		
-		alert.dismiss(); //To Cancel Alert Popup
 	}
 }

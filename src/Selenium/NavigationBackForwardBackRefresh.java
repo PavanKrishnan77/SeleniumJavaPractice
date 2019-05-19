@@ -2,16 +2,15 @@ package Selenium;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class AlertPopup
+public class NavigationBackForwardBackRefresh
 {
 	@Test
-	public void alertWindowPopup() throws InterruptedException
+	public void navigationCommands() throws InterruptedException
 	{
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -20,17 +19,16 @@ public class AlertPopup
 		
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+
+		driver.navigate().to("https://www.rediff.com/");
 		
-		driver.get("https://mail.rediff.com/cgi-bin/login.cgi");
-		
-		driver.findElement(By.name("proceed")).click();
-		
-		Alert alert = driver.switchTo().alert();
-		System.out.println(alert.getText());
+		driver.navigate().back();
 		Thread.sleep(2000);
-		
-		//alert.accept(); //To Click on OK button of Alert Popup
-		
-		alert.dismiss(); //To Cancel Alert Popup
+		driver.navigate().forward();
+		Thread.sleep(2000);
+		driver.navigate().back();
+		Thread.sleep(2000);
+		driver.navigate().refresh();
+		Thread.sleep(2000);
 	}
 }
