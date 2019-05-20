@@ -3,11 +3,11 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.DragandDrop">
+      <class name="Selenium.MoveToElement">
         <methods>
-          <include name="dragandDrop"/>
+          <include name="moveToElement"/>
         </methods>
-      </class> <!-- Selenium.DragandDrop -->
+      </class> <!-- Selenium.MoveToElement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -5,10 +5,10 @@ import org.testng.annotations.Test;
 
 public class HardAssertion 
 {
-	//Hard Assertion: If assertion is getting failed, immediately Test Case will be marked as failed-
+	//Hard Assertion: If hard assertion is getting failed, Immediately Test Case will be marked as failed-
 	//-and Test Case Execution will be terminated even if few Test cases needs to be executed after it.
 	@Test
-	public void loginVerify()
+	public void hardAssertion()
 	{
 		System.out.println("Open the Browser");
 		Assert.assertEquals(true, true, "Browser is not getting Opened"); 

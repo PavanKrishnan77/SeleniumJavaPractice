@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class BootStrapDropdown_1 
+public class BootStrapDropdown_2 
 {
 	//Handling BootStrap DropDown in Selenium
 	//Click on given Dropdown.
@@ -28,31 +28,23 @@ public class BootStrapDropdown_1
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 			
-		driver.get("https://www.jquery-az.com/boots/demo.php?ex=63.0_2");
+		driver.get("https://v4-alpha.getbootstrap.com/components/dropdowns/");
 			
-		driver.findElement(By.xpath("//button[contains(@class,'multiselect dropdown')]")).click();
-			
-		List<WebElement> dropdownValues = driver.findElements(By.xpath("//ul[contains(@class,'multiselect-container')]//li//a//label"));
+		driver.findElement(By.id("dropdownMenuButton")).click();
+		
+		List<WebElement> dropdownValues = driver.findElements(By.xpath("//div[@class='dropdown-menu' and @aria-labelledby='dropdownMenuButton']//a"));
 		System.out.println(dropdownValues.size());
 		
 		//To Print all Dropdown Values
 		/*for(int i=0; i<dropdownValues.size(); i++)
 		{
-			System.out.println(dropdownValues.get(i).getText()); 
+			System.out.println(dropdownValues.get(i).getText());
 		}*/
 		
-		//To Print all Dropdown Values and Click on all Dropdown Values
-		/*for(int i=0; i<dropdownValues.size(); i++)
-		{
-			System.out.println(dropdownValues.get(i).getText()); 
-			dropdownValues.get(i).click();
-		}*/
-		
-		//To Select Particular value from Dropdown
 		for(int i=0; i<dropdownValues.size(); i++)
 		{
-			System.out.println(dropdownValues.get(i).getText()); 
-			if(dropdownValues.get(i).getText().contains("Angular"))
+			System.out.println(dropdownValues.get(i).getText());
+			if(dropdownValues.get(i).getText().contains("Another action"))
 			{
 				dropdownValues.get(i).click();
 				break;
