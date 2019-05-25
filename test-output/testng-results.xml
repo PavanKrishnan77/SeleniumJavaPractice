@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39738" started-at="2019-05-20T17:25:20Z" finished-at="2019-05-20T17:26:00Z">
+  <suite name="Default suite" duration-ms="26915" started-at="2019-05-25T06:55:21Z" finished-at="2019-05-25T06:55:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39738" started-at="2019-05-20T17:25:20Z" finished-at="2019-05-20T17:26:00Z">
-      <class name="Selenium.MoveToElement">
-        <test-method status="PASS" signature="moveToElement()[pri:0, instance:Selenium.MoveToElement@d41cee]" name="moveToElement" duration-ms="39676" started-at="2019-05-20T22:55:20Z" finished-at="2019-05-20T22:56:00Z">
+    <test name="Default test" duration-ms="26915" started-at="2019-05-25T06:55:21Z" finished-at="2019-05-25T06:55:48Z">
+      <class name="Selenium.DragandDrop_1">
+        <test-method status="PASS" signature="dragandDrop()[pri:0, instance:Selenium.DragandDrop_1@d41cee]" name="dragandDrop" duration-ms="26846" started-at="2019-05-25T12:25:21Z" finished-at="2019-05-25T12:25:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- moveToElement -->
-      </class> <!-- Selenium.MoveToElement -->
+        </test-method> <!-- dragandDrop -->
+      </class> <!-- Selenium.DragandDrop_1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
