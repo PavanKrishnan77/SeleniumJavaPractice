@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="26915" started-at="2019-05-25T06:55:21Z" finished-at="2019-05-25T06:55:48Z">
+  <suite name="Default suite" duration-ms="29825" started-at="2019-05-28T17:16:49Z" finished-at="2019-05-28T17:17:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="26915" started-at="2019-05-25T06:55:21Z" finished-at="2019-05-25T06:55:48Z">
-      <class name="Selenium.DragandDrop_1">
-        <test-method status="PASS" signature="dragandDrop()[pri:0, instance:Selenium.DragandDrop_1@d41cee]" name="dragandDrop" duration-ms="26846" started-at="2019-05-25T12:25:21Z" finished-at="2019-05-25T12:25:48Z">
+    <test name="Default test" duration-ms="29825" started-at="2019-05-28T17:16:49Z" finished-at="2019-05-28T17:17:18Z">
+      <class name="Selenium.WebTableHandling">
+        <test-method status="PASS" signature="webTable()[pri:0, instance:Selenium.WebTableHandling@d41cee]" name="webTable" duration-ms="29786" started-at="2019-05-28T22:46:49Z" finished-at="2019-05-28T22:47:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dragandDrop -->
-      </class> <!-- Selenium.DragandDrop_1 -->
+        </test-method> <!-- webTable -->
+      </class> <!-- Selenium.WebTableHandling -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
