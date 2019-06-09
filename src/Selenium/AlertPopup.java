@@ -10,11 +10,13 @@ import org.testng.annotations.Test;
 
 public class AlertPopup
 {
+	public static WebDriver driver;
+	
 	@Test
 	public void alertWindowPopup() throws InterruptedException
 	{
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		
@@ -25,12 +27,50 @@ public class AlertPopup
 		
 		driver.findElement(By.name("proceed")).click();
 		
-		Alert alert = driver.switchTo().alert();
-		System.out.println(alert.getText());
-		Thread.sleep(2000);
+//		Alert alert = driver.switchTo().alert();
+//		System.out.println(alert.getText());
+//		Thread.sleep(2000);
+//		
+//		alert.accept(); //To Accept Alert Popup
+//	
+//		alert.dismiss(); //To Dismiss Alert Popup
 		
-		//alert.accept(); //To Click on OK button of Alert Popup
+		//To Accept Alert Popup
+		//AlertPopup.acceptAlertPopup();
 		
-		alert.dismiss(); //To Cancel Alert Popup
+		//To Dismiss Alert Popup
+		AlertPopup.dismissAlertPopup();
+	}
+	
+	public static void acceptAlertPopup() throws InterruptedException
+	{
+		try
+		{
+			Alert alert = driver.switchTo().alert();
+			System.out.println(alert.getText());
+			Thread.sleep(2000);
+			alert.accept();
+			System.out.println("Alert Accepted Successfully");
+		}
+		catch(Exception e)
+		{
+			System.out.println("Something Went Wrong -- Please Check" +e.getMessage());
+		}
+	}
+	
+	public static void dismissAlertPopup() throws InterruptedException
+	{
+		try
+		{
+			Alert alert = driver.switchTo().alert();
+			System.out.println(alert.getText());
+			Thread.sleep(2000);
+			alert.dismiss();
+			System.out.println("Alert Dismissed Successfully");
+		}
+		catch(Exception e)
+		{
+			System.out.println("Something Went Wrong -- Please Check" +e.getMessage());
+		}
 	}
 }

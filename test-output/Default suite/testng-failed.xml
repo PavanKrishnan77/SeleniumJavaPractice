@@ -3,11 +3,11 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.WebTableHandling">
+      <class name="Selenium.AlertPopup">
         <methods>
-          <include name="webTable"/>
+          <include name="alertWindowPopup"/>
         </methods>
-      </class> <!-- Selenium.WebTableHandling -->
+      </class> <!-- Selenium.AlertPopup -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
