@@ -3,11 +3,11 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.AlertPopup">
+      <class name="Selenium.DropdownFunctions">
         <methods>
-          <include name="alertWindowPopup"/>
+          <include name="dropDownSelectFunction"/>
         </methods>
-      </class> <!-- Selenium.AlertPopup -->
+      </class> <!-- Selenium.DropdownFunctions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

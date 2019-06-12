@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="21073" started-at="2019-06-09T11:45:24Z" finished-at="2019-06-09T11:45:45Z">
+  <suite name="Default suite" duration-ms="26887" started-at="2019-06-12T17:03:58Z" finished-at="2019-06-12T17:04:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="21073" started-at="2019-06-09T11:45:24Z" finished-at="2019-06-09T11:45:45Z">
-      <class name="Selenium.AlertPopup">
-        <test-method status="PASS" signature="alertWindowPopup()[pri:0, instance:Selenium.AlertPopup@d41cee]" name="alertWindowPopup" duration-ms="20982" started-at="2019-06-09T17:15:24Z" finished-at="2019-06-09T17:15:45Z">
+    <test name="Default test" duration-ms="26887" started-at="2019-06-12T17:03:58Z" finished-at="2019-06-12T17:04:25Z">
+      <class name="Selenium.DropdownFunctions_3">
+        <test-method status="PASS" signature="dropDownSelectFunction()[pri:0, instance:Selenium.DropdownFunctions_3@d41cee]" name="dropDownSelectFunction" duration-ms="26807" started-at="2019-06-12T22:33:58Z" finished-at="2019-06-12T22:34:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- alertWindowPopup -->
-      </class> <!-- Selenium.AlertPopup -->
+        </test-method> <!-- dropDownSelectFunction -->
+      </class> <!-- Selenium.DropdownFunctions_3 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
