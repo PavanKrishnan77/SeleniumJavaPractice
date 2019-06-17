@@ -3,11 +3,11 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.DropdownFunctions">
+      <class name="Selenium.DropdownAscendingOrder_Yes">
         <methods>
-          <include name="dropDownSelectFunction"/>
+          <include name="dropdownAscending"/>
         </methods>
-      </class> <!-- Selenium.DropdownFunctions -->
+      </class> <!-- Selenium.DropdownAscendingOrder_Yes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

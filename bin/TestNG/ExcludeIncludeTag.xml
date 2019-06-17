@@ -9,6 +9,9 @@ Copy & Paste this program after creating TestNG.xml file and Modify Accordingly.
 		<classes>
 			<class name="com.crm.qa.TestCases.LoginPageTest"/>
        		<class name="com.crm.qa.TestCases.HomePageTest"/>
+       			<!-- <methods>
+       				<exclude name="verifyHomePageLogo"/>
+       			</methods> -->
        		<class name="com.crm.qa.TestCases.DealsPageTest"/>
     	</classes>
 	</test>

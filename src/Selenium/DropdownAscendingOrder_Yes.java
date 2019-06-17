@@ -54,10 +54,10 @@ public class DropdownAscendingOrder_Yes
 		System.out.println(tempList);
 		
 		//It will sort in Ascending Order
-		Collections.sort(tempList);
+		//Collections.sort(tempList);
 		
 		//To Check in Descending Order
-		//Collections.sort(tempList,Collections.reverseOrder());
+		Collections.sort(tempList,Collections.reverseOrder());
 		
 		Assert.assertTrue(actualList.equals(tempList));
 		
