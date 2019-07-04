@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 public class BootStrapDropdown_1 
 {
-	//Handling BootStrap DropDown in Selenium
+	//Below are Steps to Handle BootStrap DropDown in Selenium
 	//Click on given Dropdown.
 	//Get all the tags while are available under "li" tags.
 	//Get text of each "li//a" or "div//a"
