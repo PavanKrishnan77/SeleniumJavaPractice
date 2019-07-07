@@ -2,6 +2,7 @@ package SeleniumWebDriverArchitecture;
 
 public class ChromeDriver implements WebDriver
 {
+	//ChromeDriver Class is implementing WebDriver Interface.
 	@Override
 	public void get(String url)
 	{
