@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="16093" started-at="2019-07-07T09:48:56Z" finished-at="2019-07-07T09:49:12Z">
+  <suite name="Default suite" duration-ms="11554" started-at="2019-07-13T05:48:56Z" finished-at="2019-07-13T05:49:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="16093" started-at="2019-07-07T09:48:56Z" finished-at="2019-07-07T09:49:12Z">
-      <class name="Selenium.DropdownFunctions_1">
-        <test-method status="PASS" signature="dropDownSelectFunction()[pri:0, instance:Selenium.DropdownFunctions_1@2344fc66]" name="dropDownSelectFunction" duration-ms="16063" started-at="2019-07-07T15:18:56Z" finished-at="2019-07-07T15:19:12Z">
+    <test name="Default test" duration-ms="11554" started-at="2019-07-13T05:48:56Z" finished-at="2019-07-13T05:49:07Z">
+      <class name="Selenium.OpeningNewTab">
+        <test-method status="PASS" signature="openingNewTab()[pri:0, instance:Selenium.OpeningNewTab@32e6e9c3]" name="openingNewTab" duration-ms="11533" started-at="2019-07-13T11:18:56Z" finished-at="2019-07-13T11:19:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dropDownSelectFunction -->
-      </class> <!-- Selenium.DropdownFunctions_1 -->
+        </test-method> <!-- openingNewTab -->
+      </class> <!-- Selenium.OpeningNewTab -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
