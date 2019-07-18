@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FacebookCrossBroswerSuite">
+
+  <test name="ChromeTest">
+  <parameter name="Browser" value="chrome"/>
+  <classes>
+  <class name="CrossBroswerTesting.TestClass"/>
+  </classes>
+  </test>
+  
+  <test name="FirefoxTest">
+  <parameter name="Browser" value="firefox"/>
+  <classes>
+  <class name="CrossBroswerTesting.TestClass"/>
+  </classes>
+  </test>
+  
+</suite> <!-- Suite -->
