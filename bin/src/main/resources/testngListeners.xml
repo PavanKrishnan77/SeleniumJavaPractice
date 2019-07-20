@@ -9,7 +9,7 @@
 	
  	<test name="Parameters Test">
      	<classes>
-      		<class name="Selenium.ListenersProgram"/>
+      		<class name="TestNG.ListenersProgram"/>
       	</classes>
   	</test> <!-- Test -->
   

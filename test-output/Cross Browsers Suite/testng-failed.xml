@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Cross Browsers Suite]">
+  <parameter name="Browser" value="IE"/>
+  <test name="InternetExplorer Browser Test(failed)">
+    <parameter name="Browser" value="IE"/>
+    <classes>
+      <class name="CrossBroswerTesting.TestClass">
+        <methods>
+          <include name="verifyFacebookTitle" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- CrossBroswerTesting.TestClass -->
+    </classes>
+  </test> <!-- InternetExplorer Browser Test(failed) -->
+</suite> <!-- Failed suite [Cross Browsers Suite] -->

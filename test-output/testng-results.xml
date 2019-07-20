@@ -1,121 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="2" passed="1">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="FacebookCrossBroswerSuite" duration-ms="20030" started-at="2019-07-17T17:43:05Z" finished-at="2019-07-17T17:43:25Z">
+  <suite name="FacebookSuite" duration-ms="9962" started-at="2019-07-20T07:59:16Z" finished-at="2019-07-20T07:59:26Z">
     <groups>
     </groups>
-    <test name="ChromeTest" duration-ms="14859" started-at="2019-07-17T17:43:05Z" finished-at="2019-07-17T17:43:19Z">
-      <class name="CrossBroswerTesting.TestClass">
-        <test-method status="PASS" signature="verifyFacebookTitle(java.lang.String)[pri:0, instance:CrossBroswerTesting.TestClass@2344fc66]" name="verifyFacebookTitle" duration-ms="14812" started-at="2019-07-17T23:13:05Z" finished-at="2019-07-17T23:13:19Z">
+    <test name="Parameters Test" duration-ms="9962" started-at="2019-07-20T07:59:16Z" finished-at="2019-07-20T07:59:26Z">
+      <class name="TestNG.ParametersProgram">
+        <test-method status="PASS" signature="loginUsingParameters(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG.ParametersProgram@2344fc66]" name="loginUsingParameters" duration-ms="9934" started-at="2019-07-20T13:29:16Z" finished-at="2019-07-20T13:29:26Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[https://www.facebook.com/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bsmreddy99@gmail.com/]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[reddy88033]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyFacebookTitle -->
-      </class> <!-- CrossBroswerTesting.TestClass -->
-    </test> <!-- ChromeTest -->
-    <test name="FirefoxTest" duration-ms="5140" started-at="2019-07-17T17:43:19Z" finished-at="2019-07-17T17:43:25Z">
-      <class name="CrossBroswerTesting.TestClass">
-        <test-method status="FAIL" signature="verifyFacebookTitle(java.lang.String)[pri:0, instance:CrossBroswerTesting.TestClass@6cc4c815]" name="verifyFacebookTitle" duration-ms="5140" started-at="2019-07-17T23:13:19Z" finished-at="2019-07-17T23:13:25Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[newSession
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'ADMIN-PC', ip: '172.20.10.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: WebDriverError@chrome://marionette/content/error.js:179:5
-UnknownCommandError@chrome://marionette/content/error.js:473:5
-despatch@chrome://marionette/content/server.js:283:13
-execute@chrome://marionette/content/server.js:264:11
-onPacket/<@chrome://marionette/content/server.js:237:15
-onPacket@chrome://marionette/content/server.js:236:8
-_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9
-]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: newSession
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
-System info: host: 'ADMIN-PC', ip: '172.20.10.3', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_211'
-Driver info: driver.version: FirefoxDriver
-remote stacktrace: WebDriverError@chrome://marionette/content/error.js:179:5
-UnknownCommandError@chrome://marionette/content/error.js:473:5
-despatch@chrome://marionette/content/server.js:283:13
-execute@chrome://marionette/content/server.js:264:11
-onPacket/<@chrome://marionette/content/server.js:237:15
-onPacket@chrome://marionette/content/server.js:236:8
-_onJSONObjectReady/<@chrome://marionette/content/transport.js:490:9
-
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
-	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
-	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
-	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
-	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
-	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
-	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
-	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
-	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
-	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
-	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:147)
-	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-	at CrossBroswerTesting.TestClass.verifyFacebookTitle(TestClass.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFacebookTitle -->
-      </class> <!-- CrossBroswerTesting.TestClass -->
-    </test> <!-- FirefoxTest -->
-  </suite> <!-- FacebookCrossBroswerSuite -->
+        </test-method> <!-- loginUsingParameters -->
+      </class> <!-- TestNG.ParametersProgram -->
+    </test> <!-- Parameters Test -->
+  </suite> <!-- FacebookSuite -->
 </testng-results>

@@ -23,6 +23,5 @@ public class ParametersProgram
 		System.out.println(driver.getTitle());
 		driver.findElement(By.xpath("//input[@name='email']")).sendKeys(emailID);
 		driver.findElement(By.xpath("//input[@id='pass']")).sendKeys(Password);
-		driver.findElement(By.id("u_0_2")).click();
 	}
 }
