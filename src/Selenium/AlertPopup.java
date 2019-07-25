@@ -35,11 +35,11 @@ public class AlertPopup
 //	
 //		alert.dismiss(); //To Dismiss Alert Popup
 		
-		//To Accept Alert Popup
-		//AlertPopup.acceptAlertPopup();
+		//Function to Accept Alert Popup
+		AlertPopup.acceptAlertPopup();
 		
-		//To Dismiss Alert Popup
-		AlertPopup.dismissAlertPopup();
+		//Function to Dismiss Alert Popup
+		//AlertPopup.dismissAlertPopup();
 	}
 	
 	public static void acceptAlertPopup() throws InterruptedException

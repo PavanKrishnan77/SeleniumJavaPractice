@@ -2,33 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="FacebookSuite" duration-ms="9962" started-at="2019-07-20T07:59:16Z" finished-at="2019-07-20T07:59:26Z">
+  <suite name="Default suite" duration-ms="38504" started-at="2019-07-25T16:26:15Z" finished-at="2019-07-25T16:26:54Z">
     <groups>
     </groups>
-    <test name="Parameters Test" duration-ms="9962" started-at="2019-07-20T07:59:16Z" finished-at="2019-07-20T07:59:26Z">
-      <class name="TestNG.ParametersProgram">
-        <test-method status="PASS" signature="loginUsingParameters(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:TestNG.ParametersProgram@2344fc66]" name="loginUsingParameters" duration-ms="9934" started-at="2019-07-20T13:29:16Z" finished-at="2019-07-20T13:29:26Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[https://www.facebook.com/]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[bsmreddy99@gmail.com/]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[reddy88033]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="38504" started-at="2019-07-25T16:26:15Z" finished-at="2019-07-25T16:26:54Z">
+      <class name="Selenium.DragandDrop_1">
+        <test-method status="PASS" signature="dragandDrop()[pri:0, instance:Selenium.DragandDrop_1@2344fc66]" name="dragandDrop" duration-ms="38472" started-at="2019-07-25T21:56:15Z" finished-at="2019-07-25T21:56:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginUsingParameters -->
-      </class> <!-- TestNG.ParametersProgram -->
-    </test> <!-- Parameters Test -->
-  </suite> <!-- FacebookSuite -->
+        </test-method> <!-- dragandDrop -->
+      </class> <!-- Selenium.DragandDrop_1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

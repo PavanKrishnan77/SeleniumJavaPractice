@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="CrossBroswerTesting.TestClass">
+      <class name="Selenium.MoveToElement">
         <methods>
-          <include name="verifyFacebookTitle"/>
+          <include name="moveToElement"/>
         </methods>
-      </class> <!-- CrossBroswerTesting.TestClass -->
+      </class> <!-- Selenium.MoveToElement -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

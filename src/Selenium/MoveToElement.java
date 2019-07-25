@@ -26,11 +26,21 @@ public class MoveToElement
 		
 		WebElement mouseHover= driver.findElement(By.xpath("//a[@class='menulink']"));
 		
-		Actions actions = new Actions(driver);
-		actions.moveToElement(mouseHover).build().perform();
+		//Using Normal Way
+		//Actions actions = new Actions(driver);
+		//actions.moveToElement(mouseHover).build().perform();
+		//Thread.sleep(2000);
 		
+		//Using Function
+		moveToElement(driver, mouseHover);
 		Thread.sleep(2000);
 		
 		driver.findElement(By.xpath("//ul[@class='submenu']//li//a[text()='Courses']")).click();
+	}
+	
+	public static void moveToElement(WebDriver driver, WebElement element)
+	{
+		Actions actions = new Actions(driver);
+		actions.moveToElement(element).build().perform();
 	}
 }

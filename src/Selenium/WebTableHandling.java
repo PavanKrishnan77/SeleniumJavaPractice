@@ -26,6 +26,7 @@ public class WebTableHandling
 		
 		//<<<---- To Handle WebTable Rows ---->>>
 		//<<<<<<< tr - Rows - Vertically>>>>>>>
+		//<<<<<<< td - Columns - Vertically>>>>>>>
 		
 		//To Find Size of Rows to Iterate in For Loop
 		List<WebElement> rows = driver.findElements(By.xpath("//table[@id='customers']/tbody/tr"));
