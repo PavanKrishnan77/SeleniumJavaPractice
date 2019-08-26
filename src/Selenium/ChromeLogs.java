@@ -15,7 +15,10 @@ public class ChromeLogs
 	public void chromeLogs() throws InterruptedException
 	{
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+		
+		//Below Statement to be added to Generate Chrome Logs.
 		System.setProperty("webdriver.chrome.logfile", "./ChromeLog.txt");
+		
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
