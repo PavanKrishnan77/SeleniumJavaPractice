@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9763" started-at="2019-08-08T16:01:33Z" finished-at="2019-08-08T16:01:42Z">
+  <suite name="Default suite" duration-ms="20560" started-at="2019-08-26T17:12:24Z" finished-at="2019-08-26T17:12:44Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9763" started-at="2019-08-08T16:01:33Z" finished-at="2019-08-08T16:01:42Z">
-      <class name="Selenium.ElementNotVisibleException">
-        <test-method status="PASS" signature="hiddenElement()[pri:0, instance:Selenium.ElementNotVisibleException@32e6e9c3]" name="hiddenElement" duration-ms="9732" started-at="2019-08-08T21:31:33Z" finished-at="2019-08-08T21:31:42Z">
+    <test name="Default test" duration-ms="20560" started-at="2019-08-26T17:12:24Z" finished-at="2019-08-26T17:12:44Z">
+      <class name="Selenium.ChromeLogs">
+        <test-method status="PASS" signature="chromeLogs()[pri:0, instance:Selenium.ChromeLogs@32e6e9c3]" name="chromeLogs" duration-ms="20529" started-at="2019-08-26T22:42:24Z" finished-at="2019-08-26T22:42:44Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- hiddenElement -->
-      </class> <!-- Selenium.ElementNotVisibleException -->
+        </test-method> <!-- chromeLogs -->
+      </class> <!-- Selenium.ChromeLogs -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
