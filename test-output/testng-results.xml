@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20560" started-at="2019-08-26T17:12:24Z" finished-at="2019-08-26T17:12:44Z">
+  <suite name="Default suite" duration-ms="14011" started-at="2019-08-27T19:02:58Z" finished-at="2019-08-27T19:03:12Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20560" started-at="2019-08-26T17:12:24Z" finished-at="2019-08-26T17:12:44Z">
-      <class name="Selenium.ChromeLogs">
-        <test-method status="PASS" signature="chromeLogs()[pri:0, instance:Selenium.ChromeLogs@32e6e9c3]" name="chromeLogs" duration-ms="20529" started-at="2019-08-26T22:42:24Z" finished-at="2019-08-26T22:42:44Z">
+    <test name="Default test" duration-ms="14011" started-at="2019-08-27T19:02:58Z" finished-at="2019-08-27T19:03:12Z">
+      <class name="Selenium.CountNumberOfImages">
+        <test-method status="PASS" signature="countNumberOfImages()[pri:0, instance:Selenium.CountNumberOfImages@32e6e9c3]" name="countNumberOfImages" duration-ms="13953" started-at="2019-08-28T00:32:58Z" finished-at="2019-08-28T00:33:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chromeLogs -->
-      </class> <!-- Selenium.ChromeLogs -->
+        </test-method> <!-- countNumberOfImages -->
+      </class> <!-- Selenium.CountNumberOfImages -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
