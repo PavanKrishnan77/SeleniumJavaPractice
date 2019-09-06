@@ -28,7 +28,7 @@ public class ChromeLogs
 		
 		driver.get("https://classic.crmpro.com/index.html");
 		
-		driver.findElement(By.name("username")).sendKeys("PavanReddy77");
+		driver.findElement(By.name("username")).sendKeys("Reddy77077");
 		driver.findElement(By.name("password")).sendKeys("Saibaba77");
 		
 		WebElement loginButton = driver.findElement(By.xpath("//input[@class='btn btn-small']"));

@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.ChromeLogs">
+      <class name="Selenium.BrokenLinksImages">
         <methods>
-          <include name="chromeLogs"/>
+          <include name="brokenLinksImages"/>
         </methods>
-      </class> <!-- Selenium.ChromeLogs -->
+      </class> <!-- Selenium.BrokenLinksImages -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
