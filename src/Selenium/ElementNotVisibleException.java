@@ -11,6 +11,7 @@ import org.testng.annotations.Test;
 
 public class ElementNotVisibleException 
 {
+	//To Handle Hidden Elements.
 	@Test
 	public void hiddenElement() throws InterruptedException
 	{

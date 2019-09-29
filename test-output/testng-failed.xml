@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.BrokenLinksImages">
+      <class name="Selenium.StaleElementReference_2">
         <methods>
-          <include name="brokenLinksImages"/>
+          <include name="staleElementReference"/>
         </methods>
-      </class> <!-- Selenium.BrokenLinksImages -->
+      </class> <!-- Selenium.StaleElementReference_2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

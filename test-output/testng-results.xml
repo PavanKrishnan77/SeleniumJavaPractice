@@ -1,52 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="22806" started-at="2019-09-06T21:46:17Z" finished-at="2019-09-06T21:46:40Z">
+  <suite name="Default suite" duration-ms="46724" started-at="2019-09-29T06:43:27Z" finished-at="2019-09-29T06:44:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="22806" started-at="2019-09-06T21:46:17Z" finished-at="2019-09-06T21:46:40Z">
-      <class name="Selenium.BrokenLinksImages">
-        <test-method status="FAIL" signature="brokenLinksImages()[pri:0, instance:Selenium.BrokenLinksImages@32e6e9c3]" name="brokenLinksImages" duration-ms="22766" started-at="2019-09-07T03:16:17Z" finished-at="2019-09-07T03:16:39Z">
-          <exception class="java.lang.ClassCastException">
-            <message>
-              <![CDATA[sun.net.www.protocol.mailto.MailToURLConnection cannot be cast to java.net.HttpURLConnection]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.ClassCastException: sun.net.www.protocol.mailto.MailToURLConnection cannot be cast to java.net.HttpURLConnection
-	at Selenium.BrokenLinksImages.brokenLinksImages(BrokenLinksImages.java:88)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:823)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1131)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:778)
-	at org.testng.TestRunner.run(TestRunner.java:632)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1225)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1150)
-	at org.testng.TestNG.runSuites(TestNG.java:1075)
-	at org.testng.TestNG.run(TestNG.java:1047)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:137)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:58)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.ClassCastException -->
+    <test name="Default test" duration-ms="46724" started-at="2019-09-29T06:43:27Z" finished-at="2019-09-29T06:44:14Z">
+      <class name="Selenium.StaleElementReference_2">
+        <test-method status="PASS" signature="staleElementReference()[pri:1, instance:Selenium.StaleElementReference_2@2344fc66]" name="staleElementReference" duration-ms="46699" started-at="2019-09-29T12:13:27Z" finished-at="2019-09-29T12:14:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- brokenLinksImages -->
-      </class> <!-- Selenium.BrokenLinksImages -->
+        </test-method> <!-- staleElementReference -->
+      </class> <!-- Selenium.StaleElementReference_2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
