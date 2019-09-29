@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="46724" started-at="2019-09-29T06:43:27Z" finished-at="2019-09-29T06:44:14Z">
+  <suite name="Default suite" duration-ms="48" started-at="2019-09-29T15:10:17Z" finished-at="2019-09-29T15:10:17Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="46724" started-at="2019-09-29T06:43:27Z" finished-at="2019-09-29T06:44:14Z">
-      <class name="Selenium.StaleElementReference_2">
-        <test-method status="PASS" signature="staleElementReference()[pri:1, instance:Selenium.StaleElementReference_2@2344fc66]" name="staleElementReference" duration-ms="46699" started-at="2019-09-29T12:13:27Z" finished-at="2019-09-29T12:14:14Z">
+    <test name="Default test" duration-ms="48" started-at="2019-09-29T15:10:17Z" finished-at="2019-09-29T15:10:17Z">
+      <class name="Selenium.DataProviderCode">
+        <test-method status="PASS" signature="dataProvider(java.lang.String, java.lang.String)[pri:1, instance:Selenium.DataProviderCode@7946e1f4]" name="dataProvider" duration-ms="15" started-at="2019-09-29T20:40:17Z" data-provider="getData" finished-at="2019-09-29T20:40:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FirstUserName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[FirstPassword]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- staleElementReference -->
-      </class> <!-- Selenium.StaleElementReference_2 -->
+        </test-method> <!-- dataProvider -->
+        <test-method status="PASS" signature="dataProvider(java.lang.String, java.lang.String)[pri:1, instance:Selenium.DataProviderCode@7946e1f4]" name="dataProvider" duration-ms="0" started-at="2019-09-29T20:40:17Z" data-provider="getData" finished-at="2019-09-29T20:40:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SecondUserName]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SecondPassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProvider -->
+      </class> <!-- Selenium.DataProviderCode -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
