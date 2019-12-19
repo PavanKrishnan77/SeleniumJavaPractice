@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class ReadFileLineByLine 
+public class ReadNotepadFileLineByLine 
 {
 	public static void main(String[] args) throws FileNotFoundException
 	{
@@ -13,7 +13,7 @@ public class ReadFileLineByLine
 		
 		try
 		{
-			reader = new BufferedReader(new FileReader("C:/Users/Admin/Desktop/Missed_Letters.txt"));
+			reader = new BufferedReader(new FileReader("C:/Users/Admin/Desktop/Links_Data.txt"));
 			String line = reader.readLine();
 			
 			while(line != null)
