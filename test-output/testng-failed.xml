@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.HandlingFrames">
+      <class name="Selenium.HandlingAutoSuggestions">
         <methods>
-          <include name="handlingFrames"/>
+          <include name="handlingAutoSuggestions"/>
         </methods>
-      </class> <!-- Selenium.HandlingFrames -->
+      </class> <!-- Selenium.HandlingAutoSuggestions -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
