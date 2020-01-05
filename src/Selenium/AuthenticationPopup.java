@@ -2,26 +2,25 @@ package Selenium;
 
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class FileUpload
+public class AuthenticationPopup 
 {
-	@Test
-	public void fileUpload() throws InterruptedException
+	@Test(priority=1)
+	public void authenticationPopup()
 	{
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-		
+	
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-
-		driver.navigate().to("https://encodable.com/uploaddemo/");
-		
-		driver.findElement(By.id("uploadname1")).sendKeys("C:\\Users\\PAVAN\\Desktop\\Missed_Letters.txt");
+	
+		//Username : admin
+		//Password : admin
+		driver.get("http://admin:admin@the-internet.herokuapp.com/basic_auth");
 	}
 }

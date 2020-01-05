@@ -25,13 +25,13 @@ public class JavaScriptExecutorConcept
 		driver.manage().deleteAllCookies(); //To delete all the Cookies.
 		
 		//Dynamic Waits
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 		driver.get("https://www.freecrm.com"); //To Enter URL
 		
-		driver.findElement(By.name("username")).sendKeys("naveenk");
-		driver.findElement(By.name("password")).sendKeys("test@1234");
+		driver.findElement(By.name("username")).sendKeys("pavanreddy");
+		driver.findElement(By.name("password")).sendKeys("Saibaba77");
 		//driver.findElement(By.xpath("//input[contains(@type,'submit')]")).click();
 		
 		//executeScript -- To execute JavaScript code.

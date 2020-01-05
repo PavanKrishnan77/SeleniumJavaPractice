@@ -21,8 +21,8 @@ public class SuppressFirefoxLogs
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 			
-		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			
 		driver.get("https://www.jquery-az.com/boots/demo.php?ex=63.0_2");
 	}

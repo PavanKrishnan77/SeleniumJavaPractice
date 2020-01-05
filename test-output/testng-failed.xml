@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.HandlingAutoSuggestions">
+      <class name="Selenium.AuthenticationPopup">
         <methods>
-          <include name="handlingAutoSuggestions"/>
+          <include name="authenticationPopup"/>
         </methods>
-      </class> <!-- Selenium.HandlingAutoSuggestions -->
+      </class> <!-- Selenium.AuthenticationPopup -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

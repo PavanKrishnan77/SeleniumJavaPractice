@@ -25,8 +25,8 @@ public class BootStrapDropdown_2
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 			
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			
 		driver.get("https://v4-alpha.getbootstrap.com/components/dropdowns/");
 			

@@ -21,8 +21,8 @@ public class CalendarDateSelectOrDataPicker
 		driver.manage().deleteAllCookies();
 
 		//Dynamic Wait
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
 		driver.get("https://www.makemytrip.com");
 		

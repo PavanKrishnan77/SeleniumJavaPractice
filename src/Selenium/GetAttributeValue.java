@@ -7,10 +7,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class FileUpload
+public class GetAttributeValue 
 {
-	@Test
-	public void fileUpload() throws InterruptedException
+	@Test(priority=1)
+	public void getAttributeValue()
 	{
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -19,9 +19,10 @@ public class FileUpload
 		
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-
-		driver.navigate().to("https://encodable.com/uploaddemo/");
 		
-		driver.findElement(By.id("uploadname1")).sendKeys("C:\\Users\\PAVAN\\Desktop\\Missed_Letters.txt");
+		driver.get("https://classic.crmpro.com/index.html");
+		
+		String attributeValue = driver.findElement(By.xpath("//input[@name='username']")).getAttribute("name");
+		System.out.println("The Attribute Value is ::: " +attributeValue);
 	}
 }

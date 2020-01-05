@@ -23,7 +23,7 @@ public class StaleElementReference_1
 		driver.manage().deleteAllCookies();
 		
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(13, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
 		driver.get("https://classic.crmpro.com/index.html");
 		
