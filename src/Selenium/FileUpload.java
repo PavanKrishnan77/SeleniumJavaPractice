@@ -20,8 +20,13 @@ public class FileUpload
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 
-		driver.navigate().to("https://encodable.com/uploaddemo/");
+		driver.navigate().to("https://cgi-lib.berkeley.edu/ex/fup.html");
+		Thread.sleep(3000);
 		
-		driver.findElement(By.id("uploadname1")).sendKeys("C:\\Users\\PAVAN\\Desktop\\Missed_Letters.txt");
+		driver.findElement(By.name("upfile")).sendKeys("C:\\Users\\Admin\\Desktop\\LinksData.txt");
+	
+		//To Upload File using sendKeys.
+		//In DOM, type="file" must be there for that Specific Element.
+		//Else ask Developer to make type="file", only then it will work.
 	}
 }

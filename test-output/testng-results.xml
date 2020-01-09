@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="24948" started-at="2020-01-05T16:27:00Z" finished-at="2020-01-05T16:27:25Z">
+  <suite name="Default suite" duration-ms="10757" started-at="2020-01-09T14:26:37Z" finished-at="2020-01-09T14:26:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="24948" started-at="2020-01-05T16:27:00Z" finished-at="2020-01-05T16:27:25Z">
-      <class name="Selenium.GetAttributeValue">
-        <test-method status="PASS" signature="getAttributeValue()[pri:1, instance:Selenium.GetAttributeValue@32e6e9c3]" name="getAttributeValue" duration-ms="24902" started-at="2020-01-05T21:57:00Z" finished-at="2020-01-05T21:57:25Z">
+    <test name="Default test" duration-ms="10757" started-at="2020-01-09T14:26:37Z" finished-at="2020-01-09T14:26:48Z">
+      <class name="Selenium.FileUpload">
+        <test-method status="PASS" signature="fileUpload()[pri:0, instance:Selenium.FileUpload@32e6e9c3]" name="fileUpload" duration-ms="10729" started-at="2020-01-09T19:56:37Z" finished-at="2020-01-09T19:56:48Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getAttributeValue -->
-      </class> <!-- Selenium.GetAttributeValue -->
+        </test-method> <!-- fileUpload -->
+      </class> <!-- Selenium.FileUpload -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
