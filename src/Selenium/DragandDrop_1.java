@@ -30,11 +30,11 @@ public class DragandDrop_1
 		WebElement dropElement = driver.findElement(By.id("droppable"));
 		Thread.sleep(2000);
 		
-		//Using Normal Way
+		//Using Normal Way:
 		//Actions actions = new Actions(driver);
 		//actions.dragAndDrop(dragElement, dropElement).release().build().perform();	
 		
-		//Using Function
+		//Using Function:
 		dragAndDrop(driver, dragElement, dropElement);
 	}
 	
