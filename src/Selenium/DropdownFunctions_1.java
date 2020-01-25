@@ -28,7 +28,7 @@ public class DropdownFunctions_1
 		WebElement month = driver.findElement(By.id("month"));
 		WebElement year = driver.findElement(By.id("year"));
 
-//		Below is a Repetative Task - If we have more than 10 dropdowns - It is not approached
+//		Below is a Repetitive Task - If we have more than 10 dropdowns - It is not approached
 //		Select select = new Select(day);
 //		select.selectByVisibleText("10");
 //		
@@ -47,14 +47,26 @@ public class DropdownFunctions_1
 		String dob = "10-May-1995";
 		String dobArray[] = dob.split("-");
 		
-		selectValueFromDropDown(day, dobArray[0]);
-		selectValueFromDropDown(month, dobArray[1]);
-		selectValueFromDropDown(year, dobArray[2]);	
+		selectValueFromDropDownByText(day, dobArray[0]);
+		selectValueFromDropDownByText(month, dobArray[1]);
+		selectValueFromDropDownByText(year, dobArray[2]);	
 	}
 	
-	public static void selectValueFromDropDown(WebElement element, String value)
+	public static void selectValueFromDropDownByText(WebElement element, String value)
 	{
 		Select select = new Select(element);
 		select.selectByVisibleText(value);
+	}
+	
+	public static void selectValueFromDropDownByIndex(WebElement element, int value)
+	{
+		Select select = new Select(element);
+		select.selectByIndex(value);
+	}
+	
+	public static void selectValueFromDropDownByValue(WebElement element, String value)
+	{
+		Select select = new Select(element);
+		select.selectByValue(value);
 	}
 }
