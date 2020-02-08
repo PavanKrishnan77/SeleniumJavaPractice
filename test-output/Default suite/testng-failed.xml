@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.FileUpload">
+      <class name="Selenium.SSLCertificate">
         <methods>
-          <include name="fileUpload"/>
+          <include name="sslCertificate"/>
         </methods>
-      </class> <!-- Selenium.FileUpload -->
+      </class> <!-- Selenium.SSLCertificate -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6286" started-at="2020-02-08T09:15:31Z" finished-at="2020-02-08T09:15:38Z">
+  <suite name="Default suite" duration-ms="51142" started-at="2020-02-08T10:04:32Z" finished-at="2020-02-08T10:05:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6286" started-at="2020-02-08T09:15:31Z" finished-at="2020-02-08T09:15:38Z">
+    <test name="Default test" duration-ms="51142" started-at="2020-02-08T10:04:32Z" finished-at="2020-02-08T10:05:23Z">
       <class name="Selenium.SSLCertificate">
-        <test-method status="PASS" signature="sslCertificate()[pri:0, instance:Selenium.SSLCertificate@6574b225]" name="sslCertificate" duration-ms="6245" started-at="2020-02-08T14:45:31Z" finished-at="2020-02-08T14:45:38Z">
+        <test-method status="PASS" signature="sslCertificate()[pri:0, instance:Selenium.SSLCertificate@6574b225]" name="sslCertificate" duration-ms="51107" started-at="2020-02-08T15:34:32Z" finished-at="2020-02-08T15:35:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sslCertificate -->
