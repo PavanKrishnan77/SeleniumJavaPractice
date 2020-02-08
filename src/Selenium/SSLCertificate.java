@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 public class SSLCertificate 
 {
-public static WebDriver driver;
+	public static WebDriver driver;
 	
 	@Test
 	public void sslCertificate() throws InterruptedException
@@ -30,7 +30,7 @@ public static WebDriver driver;
 		driver.manage().deleteAllCookies();
 		
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(35, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
 		driver.get("https://www.cacert.org/");
 	}
