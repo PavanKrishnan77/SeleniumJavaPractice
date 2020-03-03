@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.SSLCertificate">
+      <class name="Selenium.DisableChromeNotification">
         <methods>
-          <include name="sslCertificate"/>
+          <include name="disableChromeNotification"/>
         </methods>
-      </class> <!-- Selenium.SSLCertificate -->
+      </class> <!-- Selenium.DisableChromeNotification -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
