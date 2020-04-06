@@ -7,8 +7,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class FileUpload
+public class FileUpload_1
 {
+	//File Upload using SendKeys
 	@Test
 	public void fileUpload() throws InterruptedException
 	{

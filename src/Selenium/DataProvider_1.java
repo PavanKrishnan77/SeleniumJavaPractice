@@ -3,7 +3,7 @@ package Selenium;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-public class DataProviderCode 
+public class DataProvider_1 
 {
 	@Test(priority=1, dataProvider="getData")
 	public void dataProvider(String userName, String password)

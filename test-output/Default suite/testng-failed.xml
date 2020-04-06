@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.DisableChromeNotification">
+      <class name="Selenium.FileUpload_1">
         <methods>
-          <include name="disableChromeNotification"/>
+          <include name="fileUpload"/>
         </methods>
-      </class> <!-- Selenium.DisableChromeNotification -->
+      </class> <!-- Selenium.FileUpload_1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
