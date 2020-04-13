@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.FileUpload_1">
+      <class name="Selenium.DataProvider_2">
         <methods>
-          <include name="fileUpload"/>
+          <include name="dataProviderTest"/>
         </methods>
-      </class> <!-- Selenium.FileUpload_1 -->
+      </class> <!-- Selenium.DataProvider_2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

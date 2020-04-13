@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13413" started-at="2020-04-08T15:24:59Z" finished-at="2020-04-08T15:25:12Z">
+  <suite name="Default suite" duration-ms="66861" started-at="2020-04-13T15:46:22Z" finished-at="2020-04-13T15:47:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13413" started-at="2020-04-08T15:24:59Z" finished-at="2020-04-08T15:25:12Z">
-      <class name="Selenium.FileDownload">
-        <test-method status="PASS" signature="fileDownload()[pri:0, instance:Selenium.FileDownload@32e6e9c3]" name="fileDownload" duration-ms="13358" started-at="2020-04-08T20:54:59Z" finished-at="2020-04-08T20:55:12Z">
+    <test name="Default test" duration-ms="66861" started-at="2020-04-13T15:46:22Z" finished-at="2020-04-13T15:47:29Z">
+      <class name="Selenium.DataProvider_2">
+        <test-method status="PASS" signature="dataProviderTest(java.lang.String, java.lang.String)[pri:0, instance:Selenium.DataProvider_2@6574b225]" name="dataProviderTest" duration-ms="45615" started-at="2020-04-13T21:16:22Z" data-provider="getData" finished-at="2020-04-13T21:17:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Reddy77077]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Saibaba77]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fileDownload -->
-      </class> <!-- Selenium.FileDownload -->
+        </test-method> <!-- dataProviderTest -->
+        <test-method status="PASS" signature="dataProviderTest(java.lang.String, java.lang.String)[pri:0, instance:Selenium.DataProvider_2@6574b225]" name="dataProviderTest" duration-ms="21182" started-at="2020-04-13T21:17:08Z" data-provider="getData" finished-at="2020-04-13T21:17:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Reddy77077]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Saibaba77]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataProviderTest -->
+      </class> <!-- Selenium.DataProvider_2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
