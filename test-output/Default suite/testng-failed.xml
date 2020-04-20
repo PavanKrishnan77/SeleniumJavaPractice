@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.DataProvider_2">
+      <class name="Selenium.SuppressChromeWarnings_1">
         <methods>
-          <include name="dataProviderTest"/>
+          <include name="chromeLogs"/>
         </methods>
-      </class> <!-- Selenium.DataProvider_2 -->
+      </class> <!-- Selenium.SuppressChromeWarnings_1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
