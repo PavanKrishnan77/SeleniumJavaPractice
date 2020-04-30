@@ -28,7 +28,7 @@ public class DropdownFunctions_1
 		WebElement month = driver.findElement(By.id("month"));
 		WebElement year = driver.findElement(By.id("year"));
 
-//		Below is a Repetitive Task - If we have more than 10 dropdowns - It is not approached
+//		Below is a Repetitive Task - If we have more than 10 dropdowns - It is not approached.
 //		Select select = new Select(day);
 //		select.selectByVisibleText("10");
 //		
