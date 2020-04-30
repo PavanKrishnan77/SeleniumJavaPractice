@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="23817" started-at="2020-04-20T15:31:40Z" finished-at="2020-04-20T15:32:03Z">
+  <suite name="Default suite" duration-ms="8788" started-at="2020-04-27T16:13:30Z" finished-at="2020-04-27T16:13:39Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23817" started-at="2020-04-20T15:31:40Z" finished-at="2020-04-20T15:32:03Z">
-      <class name="Selenium.SuppressChromeWarnings_2">
-        <test-method status="PASS" signature="chromeWarnings()[pri:0, instance:Selenium.SuppressChromeWarnings_2@32e6e9c3]" name="chromeWarnings" duration-ms="23782" started-at="2020-04-20T21:01:40Z" finished-at="2020-04-20T21:02:03Z">
+    <test name="Default test" duration-ms="8788" started-at="2020-04-27T16:13:30Z" finished-at="2020-04-27T16:13:39Z">
+      <class name="Selenium.BrowserWindowHandle_2">
+        <test-method status="PASS" signature="browserPopup()[pri:0, instance:Selenium.BrowserWindowHandle_2@32e6e9c3]" name="browserPopup" duration-ms="8757" started-at="2020-04-27T21:43:30Z" finished-at="2020-04-27T21:43:39Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chromeWarnings -->
-      </class> <!-- Selenium.SuppressChromeWarnings_2 -->
+        </test-method> <!-- browserPopup -->
+      </class> <!-- Selenium.BrowserWindowHandle_2 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

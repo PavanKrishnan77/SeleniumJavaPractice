@@ -1,5 +1,6 @@
 package Selenium;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -29,7 +30,12 @@ public class DragandDrop_2
 		WebElement dragElement = driver.findElement(By.id("draggable"));
 		WebElement dropElement = driver.findElement(By.id("droppable"));
 		
+		dragAndDrop(driver, dragElement, dropElement);
+	}
+	
+	public static void dragAndDrop(WebDriver driver, WebElement sourceElement, WebElement destinationElement)
+	{
 		Actions actions = new Actions(driver);
-		actions.clickAndHold(dragElement).moveToElement(dropElement).release().build().perform();
+		actions.clickAndHold(sourceElement).pause(Duration.ofSeconds(2)).moveToElement(destinationElement).pause(Duration.ofSeconds(2)).release().build().perform();
 	}
 }

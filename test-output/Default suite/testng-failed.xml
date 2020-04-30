@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.SuppressChromeWarnings_1">
+      <class name="Selenium.KeyboardEvents">
         <methods>
-          <include name="chromeLogs"/>
+          <include name="dragandDrop"/>
         </methods>
-      </class> <!-- Selenium.SuppressChromeWarnings_1 -->
+      </class> <!-- Selenium.KeyboardEvents -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

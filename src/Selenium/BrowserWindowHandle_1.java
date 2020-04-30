@@ -8,7 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-public class BrowserWindowPopup_1 
+public class BrowserWindowHandle_1 
 {
 	@Test
 	public void browserPopup() throws AWTException, InterruptedException
@@ -17,7 +17,7 @@ public class BrowserWindowPopup_1
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get("http://www.popuptest.com/goodpopups.html");
-		System.out.println("The Parent Window Name is : " +driver.getTitle());
+		System.out.println("The Parent Window Title is ::: " +driver.getTitle());
 		
 		//Getting Window Handle before Clicking on Link
 		String parentWindow1 = driver.getWindowHandle();
@@ -28,14 +28,14 @@ public class BrowserWindowPopup_1
 		//Getting Window Handles after Clicking on Link
 		Set<String> allWindows1 = driver.getWindowHandles();
 		int count = allWindows1.size();
-		System.out.println(count);
+		System.out.println("The Number of Windows Present ::: " +count);
 		
 		for(String child : allWindows1)
 		{
 			if(!parentWindow1.equalsIgnoreCase(child))
 			{
 				driver.switchTo().window(child);
-				System.out.println("The Child Window Name is :: " +driver.getTitle());
+				System.out.println("The Child Window Title is ::: " +driver.getTitle());
 				driver.close();
 			}
 		}
