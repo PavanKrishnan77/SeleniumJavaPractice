@@ -1,149 +1,138 @@
 package Selenium;
 
-import java.io.File;
-import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.io.FileHandler;
+import org.testng.annotations.Test;
 
 public class JavaScriptExecutorConcept 
 {
-	public static void main(String[] args) throws IOException 
+	@Test
+	public void javaScriptExecutorConcept()
 	{
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");	
 		
-		WebDriver driver = new ChromeDriver(); //To Launch Chrome Browser.
+		WebDriver driver = new ChromeDriver(); 
 		
-		driver.manage().window().maximize(); //To Maximize Window.
-		driver.manage().deleteAllCookies(); //To delete all the Cookies.
+		driver.manage().window().maximize(); 
+		driver.manage().deleteAllCookies(); 
 		
-		//Dynamic Waits
 		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		
-		driver.get("https://www.freecrm.com"); //To Enter URL
+		driver.get("https://classic.crmpro.com/index.html");
 		
-		driver.findElement(By.name("username")).sendKeys("pavanreddy");
+		driver.findElement(By.name("username")).sendKeys("Reddy77077");
 		driver.findElement(By.name("password")).sendKeys("Saibaba77");
-		//driver.findElement(By.xpath("//input[contains(@type,'submit')]")).click();
 		
-		//executeScript -- To execute JavaScript code.
-		WebElement loginBtn = driver.findElement(By.xpath("//input[contains(@type,'submit')]")); //login button
+		WebElement loginButton = driver.findElement(By.xpath("//input[@class='btn btn-small']"));
+	
+		//highlightElementByJavaScript(loginButton, driver); 
 		
-		flash(loginBtn, driver); //To Highlight the Element.
+		//drawElementBorderByJavaScript(loginButton, driver); 
 		
-		drawBorder(loginBtn, driver); //To draw a Border.
+		//generateAlertByJavaScript(driver, "There is an issue with Login Button on Login Page");
 		
-		//To take Screenshot:
-		//Take screenshot and store as a File Format.
-		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		//Now copy the screenshot to desired location using copyFile //Method
-		FileHandler.copy(src, new File("C:\\Users\\Admin\\Desktop"));
+		//clickElementByJavaScript(loginButton, driver);
 		
-		//To Generate Alert.
-		//generateAlert(driver, "There is an issue with Login button on Login Page");
+		//refreshBrowserByJavaScript(driver);
 		
-		//Click on any element by using JavaScript Executor.
-		clickElementByJS(loginBtn, driver);
+		//getPageTitleByJavaScript(driver);
 		
-		//To Refresh the Page:
-		//By using Selenium:
-		driver.navigate().refresh(); 
+		//getPageInnerTextByJavaScript(driver);
 		
-		//By using JavaScript Executor:
-		refreshBrowserByJS(driver);
+		//scrollDownPageByJavaScript(driver);
 		
-		//To Get the Title of the Page by JavaScript:
-		System.out.println(getTitleByJS(driver));
-		
-		//To Get the Page Text:
-		System.out.println(getPageInnerText(driver));
-		
-		//To Scroll Page Down:
-		//scrollPageDown(driver);
-		
-		WebElement forgotPwdLink = driver.findElement(By.xpath("//a[contains(text(),'Forgot Password?')]"));
-		scrollIntoView(forgotPwdLink, driver);	
+		WebElement documentsLinks = driver.findElement(By.xpath("//h3[contains(text(), 'Documents')]"));
+		scrollIntoElementByJavaScript(documentsLinks, driver);
 	}
 	
-	public static void flash(WebElement element, WebDriver driver) 
+	//To Highlight WebElement by using JavaScript Executor.
+	public static void highlightElementByJavaScript(WebElement element, WebDriver driver) 
 	{
-        JavascriptExecutor js = ((JavascriptExecutor) driver);
-        String bgcolor  = element.getCssValue("backgroundColor");
-        for (int i = 0; i <  10; i++) 
+        JavascriptExecutor javaScript = ((JavascriptExecutor) driver);
+        String backgroundColor = element.getCssValue("backgroundColor");
+        for(int i=0; i<10; i++) 
         {
-            changeColor("rgb(0,200,0)", element,driver); //1
-            changeColor(bgcolor, element,driver); //2
+        	changeColorByJavaScript("rgb(0, 200, 0)", element, driver);
+        	changeColorByJavaScript(backgroundColor, element, driver);
         }
     }
 	
-    public static void changeColor(String color, WebElement element, WebDriver driver) 
+	//To Change the Color of WebElement by using JavaScript Executor.
+    public static void changeColorByJavaScript(String color, WebElement element, WebDriver driver) 
     {
-    	JavascriptExecutor js = ((JavascriptExecutor) driver);
-        js.executeScript("arguments[0].style.backgroundColor = '"+color+"'",  element);
+    	JavascriptExecutor javaScript = ((JavascriptExecutor) driver);
+    	javaScript.executeScript("arguments[0].style.backgroundColor = '" + color + "'", element);
         try 
         {
-            Thread.sleep(20);
+            Thread.sleep(2000);
         }  
         catch (InterruptedException e) 
         {
+        	
         }
-     }
-	
-    public static void drawBorder(WebElement element, WebDriver driver)
-    {
-    	JavascriptExecutor js = ((JavascriptExecutor) driver);
-    	js.executeScript("arguments[0].style.border='3px solid red'", element);
-    }
-    
-    public static void generateAlert(WebDriver driver, String message)
-    {
-    	JavascriptExecutor js = ((JavascriptExecutor) driver);
-    	js.executeScript("alert('"+message+"')");
-    }
-    
-    public static void clickElementByJS(WebElement element, WebDriver driver)
-    {
-    	JavascriptExecutor js = ((JavascriptExecutor) driver);
-    	js.executeScript("arguments[0].click();", element);	
     }
 	
-    public static void refreshBrowserByJS(WebDriver driver)
+    //To Draw a Border for WebElement by using JavaScript Executor.
+    public static void drawElementBorderByJavaScript(WebElement element, WebDriver driver)
     {
-    	JavascriptExecutor js = ((JavascriptExecutor) driver);
-    	js.executeScript("history.go(0)");
+    	JavascriptExecutor javaScript = ((JavascriptExecutor) driver);
+    	javaScript.executeScript("arguments[0].style.border='3px solid red'", element);
     }
     
-    public static String getTitleByJS(WebDriver driver)
+    //To Generate an Alert by using JavaScript Executor.
+    public static void generateAlertByJavaScript(WebDriver driver, String alertMessage)
     {
-    	JavascriptExecutor js = ((JavascriptExecutor) driver);
-    	String title = js.executeScript("return document.title;").toString();
-    	return title;
+    	JavascriptExecutor javaScript = ((JavascriptExecutor) driver);
+    	javaScript.executeScript("alert('" + alertMessage + "')");
     }
     
-    public static String getPageInnerText(WebDriver driver)
+    //To Click on any WebElement by using JavaScript Executor.
+    public static void clickElementByJavaScript(WebElement element, WebDriver driver)
     {
-    	JavascriptExecutor js = ((JavascriptExecutor) driver);
-    	String pageText = js.executeScript("return document.documentElement.innerText;").toString();
-    	return pageText;
+    	JavascriptExecutor javaScript = ((JavascriptExecutor) driver);
+    	javaScript.executeScript("arguments[0].click();", element);	
+    }
+	
+    //To Refresh Browser by using JavaScript Executor.
+    public static void refreshBrowserByJavaScript(WebDriver driver)
+    {
+    	JavascriptExecutor javaScript = ((JavascriptExecutor) driver);
+    	javaScript.executeScript("history.go(0)");
     }
     
-    public static void scrollPageDown(WebDriver driver)
+    //To Get Title of the Page by using JavaScript Executor.
+    public static void getPageTitleByJavaScript(WebDriver driver)
     {
-    	JavascriptExecutor js = ((JavascriptExecutor) driver);
-    	js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+    	JavascriptExecutor javaScript = ((JavascriptExecutor) driver);
+    	String pageTitle = javaScript.executeScript("return document.title;").toString();
+    	System.out.println("The Title of the Page is ::: " +pageTitle);
     }
     
-    public static void scrollIntoView(WebElement element, WebDriver driver)
+    //To Get the Page Inner Text by using JavaScript Executor.
+    public static void getPageInnerTextByJavaScript(WebDriver driver)
     {
-    	JavascriptExecutor js = ((JavascriptExecutor) driver);
-    	js.executeScript("arguments[0].scrollIntoView(true);", element);
+    	JavascriptExecutor javaScript = ((JavascriptExecutor) driver);
+    	String pageText = javaScript.executeScript("return document.documentElement.innerText;").toString();
+    	System.out.println("The Text of the Page is ::: " +pageText);
+    }
+    
+    //To Scroll Down the Page by using JavaScript Executor..
+    public static void scrollDownPageByJavaScript(WebDriver driver)
+    {
+    	JavascriptExecutor javaScript = ((JavascriptExecutor) driver);
+    	javaScript.executeScript("window.scrollTo(0,document.body.scrollHeight)");
+    }
+    
+    //To Scroll into WebElement View by using JavaScript Executor..
+    public static void scrollIntoElementByJavaScript(WebElement element, WebDriver driver)
+    {
+    	JavascriptExecutor javaScript = ((JavascriptExecutor) driver);
+    	javaScript.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 }

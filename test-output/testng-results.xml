@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8788" started-at="2020-04-27T16:13:30Z" finished-at="2020-04-27T16:13:39Z">
+  <suite name="Default suite" duration-ms="14809" started-at="2020-05-01T09:29:27Z" finished-at="2020-05-01T09:29:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8788" started-at="2020-04-27T16:13:30Z" finished-at="2020-04-27T16:13:39Z">
-      <class name="Selenium.BrowserWindowHandle_2">
-        <test-method status="PASS" signature="browserPopup()[pri:0, instance:Selenium.BrowserWindowHandle_2@32e6e9c3]" name="browserPopup" duration-ms="8757" started-at="2020-04-27T21:43:30Z" finished-at="2020-04-27T21:43:39Z">
+    <test name="Default test" duration-ms="14809" started-at="2020-05-01T09:29:27Z" finished-at="2020-05-01T09:29:41Z">
+      <class name="Selenium.JavaScriptExecutorConcept">
+        <test-method status="PASS" signature="javaScriptExecutorConcept()[pri:0, instance:Selenium.JavaScriptExecutorConcept@2344fc66]" name="javaScriptExecutorConcept" duration-ms="14783" started-at="2020-05-01T14:59:27Z" finished-at="2020-05-01T14:59:41Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- browserPopup -->
-      </class> <!-- Selenium.BrowserWindowHandle_2 -->
+        </test-method> <!-- javaScriptExecutorConcept -->
+      </class> <!-- Selenium.JavaScriptExecutorConcept -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

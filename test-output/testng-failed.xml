@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.KeyboardEvents">
+      <class name="Selenium.JavaScriptExecutorConcept">
         <methods>
-          <include name="dragandDrop"/>
+          <include name="javaScriptExecutorConcept"/>
         </methods>
-      </class> <!-- Selenium.KeyboardEvents -->
+      </class> <!-- Selenium.JavaScriptExecutorConcept -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
