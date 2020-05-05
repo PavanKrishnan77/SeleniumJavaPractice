@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="14436" started-at="2020-05-02T03:42:40Z" finished-at="2020-05-02T03:42:55Z">
+  <suite name="Default suite" duration-ms="13229" started-at="2020-05-05T13:57:12Z" finished-at="2020-05-05T13:57:25Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="14436" started-at="2020-05-02T03:42:40Z" finished-at="2020-05-02T03:42:55Z">
-      <class name="Selenium.JavaScriptExecutorConcept">
-        <test-method status="PASS" signature="javaScriptExecutorConcept()[pri:0, instance:Selenium.JavaScriptExecutorConcept@2344fc66]" name="javaScriptExecutorConcept" duration-ms="14402" started-at="2020-05-02T09:12:40Z" finished-at="2020-05-02T09:12:55Z">
+    <test name="Default test" duration-ms="13229" started-at="2020-05-05T13:57:12Z" finished-at="2020-05-05T13:57:25Z">
+      <class name="Selenium.DropdownPrintSelectUsingStreams">
+        <test-method status="PASS" signature="dropdownValuesPrintUsingStreams()[pri:0, instance:Selenium.DropdownPrintSelectUsingStreams@2344fc66]" name="dropdownValuesPrintUsingStreams" duration-ms="13191" started-at="2020-05-05T19:27:12Z" finished-at="2020-05-05T19:27:25Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- javaScriptExecutorConcept -->
-      </class> <!-- Selenium.JavaScriptExecutorConcept -->
+        </test-method> <!-- dropdownValuesPrintUsingStreams -->
+      </class> <!-- Selenium.DropdownPrintSelectUsingStreams -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

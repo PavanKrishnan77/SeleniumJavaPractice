@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-public class DropdownValuesPrintUsingStreams 
+public class DropdownPrintSelectUsingStreams 
 {
 	@Test
 	public void dropdownValuesPrintUsingStreams()
@@ -28,16 +28,30 @@ public class DropdownValuesPrintUsingStreams
 		
 		WebElement ascend = driver.findElement(By.id("tools"));
 		
-		DropdownValuesPrintUsingStreams.fetchDropdownValues(ascend);
-		
-		driver.quit();
+		DropdownPrintSelectUsingStreams.fetchDropdownValues(ascend);
+		DropdownPrintSelectUsingStreams.printDropDownValues(ascend);
+		DropdownPrintSelectUsingStreams.selectDropDownValue(ascend, "Selenium");
 	}
 	
-	//Function to Print Dropdown Values using Streams.
+	//Function to Select a Value from Drop Down using Streams.
+	public static void selectDropDownValue(WebElement element, String valueToBeSelected)
+	{
+		Select dropdownValues = new Select(element);
+		dropdownValues.getOptions().stream().filter(values -> values.getAttribute("value").matches(valueToBeSelected)).forEach(values -> values.click());
+	}
+		
+	//Function to Print Drop Down Values using Streams.
+	public static void printDropDownValues(WebElement element)
+	{
+		Select dropdownValues = new Select(element);
+		dropdownValues.getOptions().stream().map(elements -> elements.getText()).collect(Collectors.toList()).forEach(elements -> System.out.println(elements));
+	}
+	
+	//Function to Print Drop Down Values using Streams with List.
 	public static void fetchDropdownValues(WebElement element)
 	{
 		Select dropdownValues = new Select(element);
 		List<String> listOfTools = dropdownValues.getOptions().stream().map(elements -> elements.getText()).collect(Collectors.toList());
-		System.out.println("The List of Tools are ::: " +listOfTools);
+		System.out.println("The List of Tools Available are ::: " +listOfTools);
 	}
 }
