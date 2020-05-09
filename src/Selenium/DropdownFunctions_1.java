@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-public class DropdownFunctions_1 
+public class DropDownFunctions_1 
 {
 	@Test
 	public void dropDownSelectFunction() throws InterruptedException

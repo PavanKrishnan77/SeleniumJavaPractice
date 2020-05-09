@@ -11,10 +11,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
 
-public class DropdownPrintSelectUsingStreams 
+public class DropDownPrintSelectUsingStreams 
 {
 	@Test
-	public void dropdownValuesPrintUsingStreams()
+	public void dropDownPrintSelectUsingStreams()
 	{
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -28,9 +28,9 @@ public class DropdownPrintSelectUsingStreams
 		
 		WebElement ascend = driver.findElement(By.id("tools"));
 		
-		DropdownPrintSelectUsingStreams.fetchDropdownValues(ascend);
-		DropdownPrintSelectUsingStreams.printDropDownValues(ascend);
-		DropdownPrintSelectUsingStreams.selectDropDownValue(ascend, "Selenium");
+		DropDownPrintSelectUsingStreams.fetchDropdownValues(ascend);
+		DropDownPrintSelectUsingStreams.printDropDownValues(ascend);
+		DropDownPrintSelectUsingStreams.selectDropDownValue(ascend, "Selenium");
 	}
 	
 	//Function to Select a Value from Drop Down using Streams.

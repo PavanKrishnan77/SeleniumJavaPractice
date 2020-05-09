@@ -14,10 +14,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DropdownAscendingOrder_Yes 
+public class DropDownAscendingOrder_Yes 
 {
 	@Test
-	public void dropdownAscending() throws AWTException, InterruptedException
+	public void dropDownAscending() throws AWTException, InterruptedException
 	{
 		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -46,6 +46,7 @@ public class DropdownAscendingOrder_Yes
 			actualList.add(data); //Here we are adding all dropdown options into actualList
 			System.out.println(data);
 		}
+		
 		System.out.println("*************************************");
 		
 		//Temporary List and Added all the Data into tempList

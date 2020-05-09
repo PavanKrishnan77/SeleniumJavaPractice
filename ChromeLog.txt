@@ -1,4 +1,4 @@
-[1585750938.110][INFO]: COMMAND InitSession {
+[1588863132.338][INFO]: COMMAND InitSession {
    "capabilities": {
       "firstMatch": [ {
          "browserName": "chrome",
@@ -16,7 +16,7 @@
       }
    }
 }
-[1585750938.112][INFO]: Populating Preferences file: {
+[1588863132.340][INFO]: Populating Preferences file: {
    "alternate_error_pages": {
       "enabled": false
    },
@@ -69,7 +69,7 @@
       "enabled": false
    }
 }
-[1585750938.112][INFO]: Populating Local State file: {
+[1588863132.340][INFO]: Populating Local State file: {
    "background_mode": {
       "enabled": false
    },
@@ -79,9 +79,9 @@
       }
    }
 }
-[1585750938.116][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension="C:\Users\Admin\AppData\Local\Temp\scoped_dir2704_7994\internal" --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\Admin\AppData\Local\Temp\scoped_dir2704_5878" data:,
-[1585750939.171][INFO]: resolved localhost to ["::1","127.0.0.1"]
-[1585750940.193][INFO]: RESPONSE InitSession {
+[1588863132.344][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --disable-background-networking --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --disable-web-resources --enable-automation --enable-logging --force-fieldtrials=SiteIsolationExtensions/Control --ignore-certificate-errors --load-extension="C:\Users\Admin\AppData\Local\Temp\scoped_dir3836_6926\internal" --log-level=0 --metrics-recording-only --no-first-run --password-store=basic --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\Admin\AppData\Local\Temp\scoped_dir3836_17695" data:,
+[1588863133.420][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1588863134.436][INFO]: RESPONSE InitSession {
    "acceptInsecureCerts": false,
    "acceptSslCerts": false,
    "applicationCacheEnabled": false,
@@ -89,7 +89,7 @@
    "browserName": "chrome",
    "chrome": {
       "chromedriverVersion": "2.40.565498 (ea082db3280dd6843ebfb08a625e3eb905c4f5ab)",
-      "userDataDir": "C:\\Users\\Admin\\AppData\\Local\\Temp\\scoped_dir2704_5878"
+      "userDataDir": "C:\\Users\\Admin\\AppData\\Local\\Temp\\scoped_dir3836_17695"
    },
    "cssSelectorsEnabled": true,
    "databaseEnabled": false,
@@ -106,102 +106,138 @@
    "setWindowRect": true,
    "~~~": "..."
 }
-[1585750940.250][INFO]: COMMAND MaximizeWindow {
+[1588863134.530][INFO]: COMMAND MaximizeWindow {
    "handle": "current",
    "windowHandle": "current"
 }
-[1585750940.251][INFO]: resolved localhost to ["::1","127.0.0.1"]
-[1585750941.369][INFO]: RESPONSE MaximizeWindow
-[1585750941.385][INFO]: COMMAND DeleteAllCookies {
+[1588863134.531][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1588863135.673][INFO]: RESPONSE MaximizeWindow
+[1588863135.679][INFO]: COMMAND DeleteAllCookies {
 
 }
-[1585750941.385][INFO]: Waiting for pending navigations...
-[1585750941.395][INFO]: Done waiting for pending navigations. Status: ok
-[1585750941.402][INFO]: Waiting for pending navigations...
-[1585750941.403][INFO]: Done waiting for pending navigations. Status: ok
-[1585750941.403][INFO]: RESPONSE DeleteAllCookies
-[1585750941.416][INFO]: COMMAND SetTimeout {
+[1588863135.679][INFO]: Waiting for pending navigations...
+[1588863135.693][INFO]: Done waiting for pending navigations. Status: ok
+[1588863135.703][INFO]: Waiting for pending navigations...
+[1588863135.704][INFO]: Done waiting for pending navigations. Status: ok
+[1588863135.704][INFO]: RESPONSE DeleteAllCookies
+[1588863135.711][INFO]: COMMAND SetTimeout {
    "ms": 30000,
    "type": "page load"
 }
-[1585750941.416][INFO]: RESPONSE SetTimeout
-[1585750941.420][INFO]: COMMAND SetTimeout {
+[1588863135.711][INFO]: RESPONSE SetTimeout
+[1588863135.717][INFO]: COMMAND SetTimeout {
    "ms": 15000,
    "type": "implicit"
 }
-[1585750941.421][INFO]: RESPONSE SetTimeout
-[1585750941.425][INFO]: COMMAND Navigate {
+[1588863135.717][INFO]: RESPONSE SetTimeout
+[1588863135.721][INFO]: COMMAND Navigate {
    "url": "https://classic.crmpro.com/index.html"
 }
-[1585750941.426][INFO]: Waiting for pending navigations...
-[1585750941.426][INFO]: Done waiting for pending navigations. Status: ok
-[1585750943.408][INFO]: Waiting for pending navigations...
-[1585750949.537][INFO]: Done waiting for pending navigations. Status: ok
-[1585750949.537][INFO]: RESPONSE Navigate
-[1585750949.556][INFO]: COMMAND FindElement {
+[1588863135.721][INFO]: Waiting for pending navigations...
+[1588863135.722][INFO]: Done waiting for pending navigations. Status: ok
+[1588863137.181][INFO]: Waiting for pending navigations...
+[1588863142.671][INFO]: Done waiting for pending navigations. Status: ok
+[1588863142.671][INFO]: RESPONSE Navigate
+[1588863142.694][INFO]: COMMAND FindElement {
    "using": "name",
    "value": "username"
 }
-[1585750949.557][INFO]: Waiting for pending navigations...
-[1585750949.561][INFO]: Done waiting for pending navigations. Status: ok
-[1585750949.584][INFO]: Waiting for pending navigations...
-[1585750949.586][INFO]: Done waiting for pending navigations. Status: ok
-[1585750949.586][INFO]: RESPONSE FindElement {
-   "ELEMENT": "0.8015063719967845-1"
+[1588863142.694][INFO]: Waiting for pending navigations...
+[1588863142.694][INFO]: Done waiting for pending navigations. Status: ok
+[1588863142.710][INFO]: Waiting for pending navigations...
+[1588863142.710][INFO]: Done waiting for pending navigations. Status: ok
+[1588863142.710][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.383369342677359-1"
 }
-[1585750949.597][INFO]: COMMAND TypeElement {
-   "id": "0.8015063719967845-1",
-   "value": [ "Reddy77077" ]
-}
-[1585750949.597][INFO]: Waiting for pending navigations...
-[1585750949.598][INFO]: Done waiting for pending navigations. Status: ok
-[1585750949.703][INFO]: Waiting for pending navigations...
-[1585750949.704][INFO]: Done waiting for pending navigations. Status: ok
-[1585750949.704][INFO]: RESPONSE TypeElement
-[1585750949.711][INFO]: COMMAND FindElement {
+[1588863142.715][INFO]: COMMAND FindElement {
    "using": "name",
    "value": "password"
 }
-[1585750949.712][INFO]: Waiting for pending navigations...
-[1585750949.713][INFO]: Done waiting for pending navigations. Status: ok
-[1585750949.727][INFO]: Waiting for pending navigations...
-[1585750949.729][INFO]: Done waiting for pending navigations. Status: ok
-[1585750949.729][INFO]: RESPONSE FindElement {
-   "ELEMENT": "0.8015063719967845-2"
+[1588863142.715][INFO]: Waiting for pending navigations...
+[1588863142.716][INFO]: Done waiting for pending navigations. Status: ok
+[1588863142.739][INFO]: Waiting for pending navigations...
+[1588863142.742][INFO]: Done waiting for pending navigations. Status: ok
+[1588863142.742][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.383369342677359-2"
 }
-[1585750949.736][INFO]: COMMAND TypeElement {
-   "id": "0.8015063719967845-2",
-   "value": [ "Saibaba77" ]
-}
-[1585750949.736][INFO]: Waiting for pending navigations...
-[1585750949.737][INFO]: Done waiting for pending navigations. Status: ok
-[1585750949.838][INFO]: Waiting for pending navigations...
-[1585750949.844][INFO]: Done waiting for pending navigations. Status: ok
-[1585750949.844][INFO]: RESPONSE TypeElement
-[1585750949.851][INFO]: COMMAND FindElement {
+[1588863142.747][INFO]: COMMAND FindElement {
    "using": "xpath",
    "value": "//input[@class='btn btn-small']"
 }
-[1585750949.851][INFO]: Waiting for pending navigations...
-[1585750949.852][INFO]: Done waiting for pending navigations. Status: ok
-[1585750949.867][INFO]: Waiting for pending navigations...
-[1585750949.868][INFO]: Done waiting for pending navigations. Status: ok
-[1585750949.868][INFO]: RESPONSE FindElement {
-   "ELEMENT": "0.8015063719967845-3"
+[1588863142.747][INFO]: Waiting for pending navigations...
+[1588863142.748][INFO]: Done waiting for pending navigations. Status: ok
+[1588863142.767][INFO]: Waiting for pending navigations...
+[1588863142.767][INFO]: Done waiting for pending navigations. Status: ok
+[1588863142.768][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.383369342677359-3"
 }
-[1585750949.876][INFO]: COMMAND ExecuteScript {
-   "args": [ {
-      "ELEMENT": "0.8015063719967845-3",
-      "element-6066-11e4-a52e-4f735466cecf": "0.8015063719967845-3"
-   } ],
-   "script": "arguments[0].click();"
+[1588863142.781][INFO]: COMMAND FindElement {
+   "using": "xpath",
+   "value": "//a[contains(text(), 'Customers')]"
 }
-[1585750949.876][INFO]: Waiting for pending navigations...
-[1585750949.878][INFO]: Done waiting for pending navigations. Status: ok
-[1585750949.921][INFO]: Waiting for pending navigations...
-[1585750958.430][INFO]: Done waiting for pending navigations. Status: ok
-[1585750958.430][INFO]: RESPONSE ExecuteScript
-[1585750958.445][INFO]: COMMAND Quit {
-
+[1588863142.781][INFO]: Waiting for pending navigations...
+[1588863142.782][INFO]: Done waiting for pending navigations. Status: ok
+[1588863142.795][INFO]: Waiting for pending navigations...
+[1588863142.796][INFO]: Done waiting for pending navigations. Status: ok
+[1588863142.796][INFO]: RESPONSE FindElement {
+   "ELEMENT": "0.383369342677359-4"
 }
-[1585750958.482][INFO]: RESPONSE Quit
+[1588863142.833][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.383369342677359-1"
+}
+[1588863142.834][INFO]: Waiting for pending navigations...
+[1588863142.835][INFO]: Done waiting for pending navigations. Status: ok
+[1588863142.859][INFO]: Waiting for pending navigations...
+[1588863142.861][INFO]: Done waiting for pending navigations. Status: ok
+[1588863142.862][INFO]: RESPONSE IsElementDisplayed true
+[1588863142.868][INFO]: COMMAND TypeElement {
+   "id": "0.383369342677359-1",
+   "value": [ "Reddy77077" ]
+}
+[1588863142.868][INFO]: Waiting for pending navigations...
+[1588863142.873][INFO]: Done waiting for pending navigations. Status: ok
+[1588863142.971][INFO]: Waiting for pending navigations...
+[1588863142.973][INFO]: Done waiting for pending navigations. Status: ok
+[1588863142.973][INFO]: RESPONSE TypeElement
+[1588863142.978][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.383369342677359-2"
+}
+[1588863142.978][INFO]: Waiting for pending navigations...
+[1588863142.979][INFO]: Done waiting for pending navigations. Status: ok
+[1588863142.994][INFO]: Waiting for pending navigations...
+[1588863142.996][INFO]: Done waiting for pending navigations. Status: ok
+[1588863142.996][INFO]: RESPONSE IsElementDisplayed true
+[1588863143.004][INFO]: COMMAND TypeElement {
+   "id": "0.383369342677359-2",
+   "value": [ "Saibaba77" ]
+}
+[1588863143.004][INFO]: Waiting for pending navigations...
+[1588863143.010][INFO]: Done waiting for pending navigations. Status: ok
+[1588863143.110][INFO]: Waiting for pending navigations...
+[1588863143.112][INFO]: Done waiting for pending navigations. Status: ok
+[1588863143.112][INFO]: RESPONSE TypeElement
+[1588863143.116][INFO]: COMMAND IsElementDisplayed {
+   "id": "0.383369342677359-4"
+}
+[1588863143.116][INFO]: Waiting for pending navigations...
+[1588863143.117][INFO]: Done waiting for pending navigations. Status: ok
+[1588863143.131][INFO]: Waiting for pending navigations...
+[1588863143.133][INFO]: Done waiting for pending navigations. Status: ok
+[1588863143.134][INFO]: RESPONSE IsElementDisplayed true
+[1588863143.141][INFO]: COMMAND IsElementEnabled {
+   "id": "0.383369342677359-4"
+}
+[1588863143.141][INFO]: Waiting for pending navigations...
+[1588863143.144][INFO]: Done waiting for pending navigations. Status: ok
+[1588863143.153][INFO]: Waiting for pending navigations...
+[1588863143.157][INFO]: Done waiting for pending navigations. Status: ok
+[1588863143.157][INFO]: RESPONSE IsElementEnabled true
+[1588863143.163][INFO]: COMMAND ClickElement {
+   "id": "0.383369342677359-4"
+}
+[1588863143.163][INFO]: Waiting for pending navigations...
+[1588863143.164][INFO]: Done waiting for pending navigations. Status: ok
+[1588863143.236][INFO]: Waiting for pending navigations...
+[1588863143.238][INFO]: Done waiting for pending navigations. Status: ok
+[1588863143.238][INFO]: RESPONSE ClickElement unknown error: Element <a href="https://classic.freecrm.com/customers.html">...</a> is not clickable at point (901, 45). Other element would receive the click: <div id="preloader" style="opacity: 0.315469;">...</div>
+  (Session info: chrome=81.0.4044.129)

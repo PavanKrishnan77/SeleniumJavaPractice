@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13229" started-at="2020-05-05T13:57:12Z" finished-at="2020-05-05T13:57:25Z">
+  <suite name="Default suite" duration-ms="11664" started-at="2020-05-09T05:13:34Z" finished-at="2020-05-09T05:13:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13229" started-at="2020-05-05T13:57:12Z" finished-at="2020-05-05T13:57:25Z">
-      <class name="Selenium.DropdownPrintSelectUsingStreams">
-        <test-method status="PASS" signature="dropdownValuesPrintUsingStreams()[pri:0, instance:Selenium.DropdownPrintSelectUsingStreams@2344fc66]" name="dropdownValuesPrintUsingStreams" duration-ms="13191" started-at="2020-05-05T19:27:12Z" finished-at="2020-05-05T19:27:25Z">
+    <test name="Default test" duration-ms="11664" started-at="2020-05-09T05:13:34Z" finished-at="2020-05-09T05:13:46Z">
+      <class name="Selenium.DropDownPrintSelectUsingStreams">
+        <test-method status="PASS" signature="dropDownPrintSelectUsingStreams()[pri:0, instance:Selenium.DropDownPrintSelectUsingStreams@2344fc66]" name="dropDownPrintSelectUsingStreams" duration-ms="11632" started-at="2020-05-09T10:43:34Z" finished-at="2020-05-09T10:43:46Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dropdownValuesPrintUsingStreams -->
-      </class> <!-- Selenium.DropdownPrintSelectUsingStreams -->
+        </test-method> <!-- dropDownPrintSelectUsingStreams -->
+      </class> <!-- Selenium.DropDownPrintSelectUsingStreams -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class DropdownAscescendingOrder_No 
+public class DropDownAscescendingOrder_No 
 {
 	@Test
 	public void dropdownAscending() throws AWTException, InterruptedException
