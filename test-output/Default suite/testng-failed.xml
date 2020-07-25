@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.ExplicitWaitTest">
+      <class name="Selenium.DropDownValuesValidation">
         <methods>
-          <include name="chromeLogs"/>
+          <include name="dropDownValuesValidation"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- Selenium.ExplicitWaitTest -->
+      </class> <!-- Selenium.DropDownValuesValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

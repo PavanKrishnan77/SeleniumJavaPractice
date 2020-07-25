@@ -2,16 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11664" started-at="2020-05-09T05:13:34Z" finished-at="2020-05-09T05:13:46Z">
+  <suite name="Default suite" duration-ms="13062" started-at="2020-07-23T14:56:28Z" finished-at="2020-07-23T14:56:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11664" started-at="2020-05-09T05:13:34Z" finished-at="2020-05-09T05:13:46Z">
-      <class name="Selenium.DropDownPrintSelectUsingStreams">
-        <test-method status="PASS" signature="dropDownPrintSelectUsingStreams()[pri:0, instance:Selenium.DropDownPrintSelectUsingStreams@2344fc66]" name="dropDownPrintSelectUsingStreams" duration-ms="11632" started-at="2020-05-09T10:43:34Z" finished-at="2020-05-09T10:43:46Z">
+    <test name="Default test" duration-ms="13062" started-at="2020-07-23T14:56:28Z" finished-at="2020-07-23T14:56:41Z">
+      <class name="Selenium.DropDownValuesValidation">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Selenium.DropDownValuesValidation@4de8b406]" name="setUp" is-config="true" duration-ms="12194" started-at="2020-07-23T20:26:28Z" finished-at="2020-07-23T20:26:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dropDownPrintSelectUsingStreams -->
-      </class> <!-- Selenium.DropDownPrintSelectUsingStreams -->
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="dropDownValuesValidation()[pri:0, instance:Selenium.DropDownValuesValidation@4de8b406]" name="dropDownValuesValidation" duration-ms="226" started-at="2020-07-23T20:26:40Z" finished-at="2020-07-23T20:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownValuesValidation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Selenium.DropDownValuesValidation@4de8b406]" name="tearDown" is-config="true" duration-ms="624" started-at="2020-07-23T20:26:41Z" finished-at="2020-07-23T20:26:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Selenium.DropDownValuesValidation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
