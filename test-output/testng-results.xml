@@ -2,24 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="13062" started-at="2020-07-23T14:56:28Z" finished-at="2020-07-23T14:56:41Z">
+  <suite name="Default suite" duration-ms="25875" started-at="2020-08-21T17:24:56Z" finished-at="2020-08-21T17:25:22Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="13062" started-at="2020-07-23T14:56:28Z" finished-at="2020-07-23T14:56:41Z">
-      <class name="Selenium.DropDownValuesValidation">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Selenium.DropDownValuesValidation@4de8b406]" name="setUp" is-config="true" duration-ms="12194" started-at="2020-07-23T20:26:28Z" finished-at="2020-07-23T20:26:40Z">
+    <test name="Default test" duration-ms="25875" started-at="2020-08-21T17:24:56Z" finished-at="2020-08-21T17:25:22Z">
+      <class name="Selenium.HashMapInSelenium">
+        <test-method status="PASS" signature="hashMapInSelenium()[pri:0, instance:Selenium.HashMapInSelenium@32e6e9c3]" name="hashMapInSelenium" duration-ms="25844" started-at="2020-08-21T22:54:56Z" finished-at="2020-08-21T22:55:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="dropDownValuesValidation()[pri:0, instance:Selenium.DropDownValuesValidation@4de8b406]" name="dropDownValuesValidation" duration-ms="226" started-at="2020-07-23T20:26:40Z" finished-at="2020-07-23T20:26:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dropDownValuesValidation -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Selenium.DropDownValuesValidation@4de8b406]" name="tearDown" is-config="true" duration-ms="624" started-at="2020-07-23T20:26:41Z" finished-at="2020-07-23T20:26:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- Selenium.DropDownValuesValidation -->
+        </test-method> <!-- hashMapInSelenium -->
+      </class> <!-- Selenium.HashMapInSelenium -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

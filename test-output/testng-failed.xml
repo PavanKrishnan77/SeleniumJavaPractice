@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Selenium.DropDownValuesValidation">
+      <class name="Selenium.HashMapInSelenium">
         <methods>
-          <include name="dropDownValuesValidation"/>
-          <include name="setUp"/>
-          <include name="tearDown"/>
+          <include name="hashMapInSelenium"/>
         </methods>
-      </class> <!-- Selenium.DropDownValuesValidation -->
+      </class> <!-- Selenium.HashMapInSelenium -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
